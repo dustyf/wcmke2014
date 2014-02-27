@@ -1,0 +1,61 @@
+/*
+Theme Name: WCMKE
+Theme URI: 
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: wcmke
+Template: twentyfourteen
+*/
+
+@import url("../twentyfourteen/style.css");
+
+.site {
+	max-width: 100%;
+}
+.home.masthead-fixed .site-main {
+	margin-top: 448px;
+	max-width: none;
+}
+.featured-content {
+	padding: 0;
+	width: 100%;
+}
+#secondary {
+	width: 100%;
+	margin: 0;
+	float: none;
+	clear: both;
+	border: none;
+	background: #000;
+	min-height: inherit;
+	padding: 0;
+}
+.site:before {
+	width: 0;
+	background-color: transparent;
+}
+.masthead-fixed .site-header {
+	width: 100%;
+	max-width: 100%;
+}
+.site-description {
+	margin: 0;
+}
+.site-content {
+	margin: 0;
+}
+.site-content .entry-header, .site-content .entry-content, .site-content .entry-summary, .site-content .entry-meta, .page-content {
+	max-width: 680px;
+}
+body.home {
+	background: url(cow1-banner1.jpg) 50% 48px fixed no-repeat;
+	background-size: 100%;
+}
+body.home.logged-in {
+	background-position: 50% 80px;
+}
