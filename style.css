@@ -241,13 +241,6 @@ a:hover {
 
 }
 
-.site-title a {
-	transition: background-size 0.2s linear;
-}
-.site-title a:hover {
-	background-size: 205px;
-}
-
 #clouds{
 	padding: 100px 0;
 	background: #c9dbe9;
