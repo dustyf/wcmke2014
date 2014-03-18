@@ -17,9 +17,10 @@ Template: twentyfourteen
 	max-width: 100%;
 }
 .home.masthead-fixed .site-main {
-	margin-top: 448px;
+	/*margin-top: 448px;*/
 	max-width: none;
 }
+
 .featured-content {
 	padding: 0;
 	width: 100%;
@@ -52,9 +53,313 @@ Template: twentyfourteen
 	max-width: 680px;
 }
 body.home {
-	background: url(http://2014.milwaukee.wordcamp.org/files/2014/02/cow1-banner1.jpg) 50% 48px fixed no-repeat;
-	background-size: 100%;
+	/*background: url(http://2014.milwaukee.wordcamp.org/files/2014/02/cow1-banner1.jpg) 50% 48px fixed no-repeat;*/
+	b/*ackground: url(images/cow1-banner1.jpg) 50% 48px fixed no-repeat;
+	background-size: 100%;*/
 }
 body.home.logged-in {
 	background-position: 50% 80px;
+}
+.site-header {
+	background: #23211d;
+	border-bottom: 5px solid #a9c332;
+}
+
+.site-title a {
+	/*background: url(http://2014.milwaukee.wordcamp.org/files/2014/03/WordCamp-MKE-2014-Website-Logo.png) top center no-repeat;*/
+	background: url(images/WordCamp-MKE-2014-Website-Logo.png) 0 0 no-repeat;
+	background-size: 200px 48px;
+	text-indent: -9999px;
+	width: 220px;
+	float: left;
+}
+.search-toggle {
+	display: none;
+}
+.primary-navigation li.callout {
+	background: #2088ca;
+}
+
+/* Reset colors */
+body,
+button,
+input,
+select,
+textarea {
+	color: #23211d;
+}
+a {
+	color: #ed1e28;
+	text-decoration: none;
+}
+.entry-content a,
+.entry-summary a,
+.page-content a,
+.comment-content a {
+	text-decoration: none;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	font-family: 'Lato', sans-serif;
+	color: #c49641;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Rokkitt', serif;
+	color: #2088ca;
+}
+.entry-title {
+	text-transform: none;
+	font-weight: normal;
+	font-size: 48px;
+}
+.entry-title a {
+	color: #2088ca;
+}
+.entry-title a:hover,
+a:active, 
+a:hover {
+	color: #a9c332;
+}
+.primary-navigation li:hover > a, .primary-navigation li.focus > a {
+	background-color: #a9c332;
+}
+
+/* Home page specific. HTML elements placed in WP Editor */
+.home .entry-header {
+	display: none;
+}
+.home .content-area {
+	padding: 0;
+}
+.home.full-width .site-content .entry-content {
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0;
+}
+.home .entry-content {
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.small-hill{
+     height:140px;
+     width:320px;
+     border-radius: 320px 320px 0 0;
+     -moz-border-radius: 320px 320px 0 0;
+     -webkit-border-radius: 320px 320px 0 0;
+     background: #a9c332;
+}
+.big-hill{
+     height:240px;
+     width:520px;
+     border-radius: 520px 520px 0 0;
+     -moz-border-radius: 520px 520px 0 0;
+     -webkit-border-radius: 520px 520px 0 0;
+     background: #34cc90;
+}
+.river {
+    border-bottom: 100px solid #2088ca;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+
+/* Reset White to slightly off-white */
+.site,
+.site-content .entry-meta,
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.page-content,
+.page-links a,
+.page-links > span,
+.content-sidebar .widget input,
+.content-sidebar .widget textarea {
+	background-color: #fff9eb;
+}
+.menu-toggle:before,
+.entry-meta .tag-links a,
+.entry-meta .tag-links a:hover,
+.entry-meta .tag-links a:after,
+.page-links a,
+.page-links a:hover,
+.gallery-caption,
+.widget a,
+.widget blockquote cite,
+.widget input,
+.widget textarea,
+.widget-title,
+.widget-title a,
+.content-sidebar .widget input[type="button"],
+.content-sidebar .widget input[type="reset"],
+.content-sidebar .widget input[type="submit"],
+.content-sidebar .widget_twentyfourteen_ephemera .widget-title:before,
+.featured-content .hentry,
+.featured-content a,
+.featured-content .entry-meta,
+.slider-direction-nav a:before,
+.site-navigation li .current_page_item > a,
+.site-navigation li .current_page_ancestor > a,
+.site-navigation li .current-menu-item > a,
+.site-navigation li .current-menu-ancestor > a,
+.primary-navigation li:hover > a,
+.primary-navigation li.focus > a,
+.secondary-navigation li:hover > a,
+.secondary-navigation li.focus > a,
+.site-navigation a {
+	color: #fff9eb;
+}
+.slider-direction-nav li,
+.page-links a,
+.page-links > span {
+	border-color: #fff9eb;
+}
+
+/* Animations */
+.menu-itemx a {
+	animation: bounceIn 0.6s;
+  transform: rotate(0deg) scale(1) translateZ(0);
+  transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+}
+
+.menu-item a:hover {
+	transition: background-color 0.8s cubic-bezier(.8,1.8,.75,.75);
+
+}
+
+.site-title a {
+	transition: background-size 0.2s linear;
+}
+.site-title a:hover {
+	background-size: 205px;
+}
+
+#clouds{
+	padding: 100px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 95s linear infinite;
+	-moz-animation: moveclouds 95s linear infinite;
+	-o-animation: moveclouds 95s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 75s linear infinite;
+	-moz-animation: moveclouds 75s linear infinite;
+	-o-animation: moveclouds 75s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 80s linear infinite;
+	-moz-animation: moveclouds 80s linear infinite;
+	-o-animation: moveclouds 80s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 90s linear infinite;
+	-moz-animation: moveclouds 90s linear infinite;
+	-o-animation: moveclouds 90s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 100s linear infinite;
+	-moz-animation: moveclouds 100s linear infinite;
+	-o-animation: moveclouds 100s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
 }
