@@ -153,6 +153,9 @@ a:hover {
 	padding: 0;
 	margin: 0;
 }
+.home .panel {
+	min-height: 620px;
+}
 
 .small-hill{
      height:140px;
@@ -176,6 +179,31 @@ a:hover {
 	border-right: 50px solid transparent;
 	height: 0;
 	width: 100px;
+}
+.arrows {
+	width: 100%;
+	text-align: center;
+	font-size: 100px;
+	color: #ed1e28;
+	line-height: 1em;
+}
+.learn-more {
+	font-size: 1.5em;
+	width: 100%;
+	text-align: center;
+	line-height: 1em;
+}
+.main-info {
+	width: 100%;
+	text-align: center;
+	top: 0;
+	position: absolute;
+}
+.main-info img.logo {
+	max-width: 306px;
+	max-height: 396px;
+	width: 100%;
+	height: 100%;
 }
 
 /* Reset White to slightly off-white */
@@ -242,7 +270,7 @@ a:hover {
 }
 
 #clouds{
-	padding: 100px 0;
+	padding-top: 100px;
 	background: #c9dbe9;
 	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
@@ -355,4 +383,39 @@ a:hover {
 @-o-keyframes moveclouds {
 	0% {margin-left: 1000px;}
 	100% {margin-left: -1000px;}
+}
+
+.floating {
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
 }
