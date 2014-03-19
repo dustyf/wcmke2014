@@ -171,9 +171,16 @@ a:hover {
 .home #info-panel .panel-content {
 	padding: 20em;
 }
-.home #gallery-panel {
+.home #speakers-panel {
 	background: url(images/cow1.jpg) 50% 50% no-repeat fixed;
 	background-size: cover;
+}
+.home #location-panel {
+	background: url(images/wcmke-map-bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+.home #connect-panel {
+	
 }
 
 .small-hill{
