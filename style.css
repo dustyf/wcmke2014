@@ -54,11 +54,11 @@ Template: twentyfourteen
 }
 body.home {
 	/*background: url(http://2014.milwaukee.wordcamp.org/files/2014/02/cow1-banner1.jpg) 50% 48px fixed no-repeat;*/
-	b/*ackground: url(images/cow1-banner1.jpg) 50% 48px fixed no-repeat;
+	/*background: url(images/cow1-banner1.jpg) 50% 48px fixed no-repeat;
 	background-size: 100%;*/
 }
 body.home.logged-in {
-	background-position: 50% 80px;
+	/*background-position: 50% 80px;*/
 }
 .site-header {
 	background: #23211d;
@@ -146,6 +146,12 @@ a:hover {
 	padding-right: 0;
 	padding-left: 0;
 	margin: 0;
+	background: transparent;
+	padding:0;
+	overflow: hidden;
+}
+.home.full-width .main-content {
+	background: transparent;
 }
 .home .entry-content {
 	max-width: 100%;
@@ -154,7 +160,20 @@ a:hover {
 	margin: 0;
 }
 .home .panel {
-	min-height: 620px;
+	min-height: 740px;
+}
+.home .site {
+	background: transparent;
+}
+.home #info-panel {
+	background: #6f8733;
+}
+.home #info-panel .panel-content {
+	padding: 20em;
+}
+.home #gallery-panel {
+	background: url(images/cow1.jpg) 50% 50% no-repeat fixed;
+	background-size: cover;
 }
 
 .small-hill{
@@ -270,7 +289,7 @@ a:hover {
 }
 
 #clouds{
-	padding-top: 100px;
+	padding: 100px 0 0;
 	background: #c9dbe9;
 	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
