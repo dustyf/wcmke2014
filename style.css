@@ -171,6 +171,11 @@ a:hover {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.home #clouds .about {
+	width: 100%;
+	max-width: 760px;
+	margin: 0 auto;
+}
 .home #info-panel {
 	background: #6f8733;
 }
