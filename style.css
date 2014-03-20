@@ -165,6 +165,12 @@ a:hover {
 .home .site {
 	background: transparent;
 }
+.home #clouds .date {
+	font-size: 34px;
+	font-family: 'Rokkitt', serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 .home #info-panel {
 	background: #6f8733;
 }
