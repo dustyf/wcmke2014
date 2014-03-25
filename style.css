@@ -917,5 +917,14 @@ h3.ca-sub{
 	.home #clouds .about {
 		width: 90%;
 	}
+	#clouds {
+		padding-top: 0;
+	}
+	#clouds .cloud {
+		display: none;
+	}
+	#clouds .main-info {
+		position: relative;
+	}
 
 }
