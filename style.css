@@ -34,6 +34,7 @@ Template: twentyfourteen
 	background: #000;
 	min-height: inherit;
 	padding: 0;
+	display: none;
 }
 .site:before {
 	width: 0;
@@ -159,9 +160,6 @@ a:hover {
 .home .content-area {
 	padding: 0;
 }
-.home #secondary {
-	display: none;
-}
 .home.full-width .site-content .entry-content {
 	padding-right: 0;
 	padding-left: 0;
@@ -236,6 +234,9 @@ color: #fff;
 }
 .home .edit-link {
 	display: none;
+}
+.post-thumbnail {
+	background: url(images/clouds.jpg) #e3ecf3 repeat-x;
 }
 
 .small-hill{
